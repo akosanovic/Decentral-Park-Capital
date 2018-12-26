@@ -1,6 +1,14 @@
 /*==============================
   Home Page
 ==============================*/
+@media screen and (max-width: 640px) {
+  .homepage .Mobile-bar {
+    background-color: #1f1f1f;
+  }
+  .homepage .Mobile-bar .Mobile-bar-menu {
+    stroke: #ffffff;
+  }
+}
 @media screen and (min-width: 960px) {
   .homepage .Index-page-content {
     padding-top: 160px;
