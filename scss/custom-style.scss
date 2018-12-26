@@ -1,0 +1,189 @@
+$lh: 27px;
+$ff-fjalla: "Fjalla One";
+$ff-libre-f: "Libre Franklin";
+$screen-mobile: 640px;
+$screen-tablet: 960px;
+$screen-desktop-lg: 1280px;
+
+/*==============================
+  Home Page
+==============================*/
+
+.homepage {
+	.Index-page-content {
+		@media screen and (min-width: $screen-tablet) {
+			padding-top: 160px;
+		}
+	}
+}
+
+
+/*============================
+  Mobile Header
+=============================*/
+
+@media screen and (max-width: $screen-mobile) {
+	.Mobile-bar-branding {
+		position: relative;
+		display: inline-block;
+		width: $lh*1.5;
+		height: $lh*2;
+		img {
+			display: none;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			background-image: url('https://static1.squarespace.com/static/5c0d2fc1cef372ba72f016a9/5c1b80da0e2e729c83594597/5c1b80e721c67cd7830bd0db/1545306346251/DPC+leaf.png');
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			display: block;
+			background-size: cover;
+			background-position: center;
+			top: 0;
+		}
+	}
+}
+
+
+/*==============================
+  FOOTER
+==============================*/
+
+.Footer-blocks--bottom {
+	display: none;
+}
+
+// Global Style
+.Footer-middle {
+	h1 {
+		color: #fff;
+		font-size: 24px;
+	}
+}
+
+// Layout 
+.Footer .Footer-inner {
+	.Footer-middle {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row !important;
+		@media screen and (min-width: $screen-desktop-lg) {
+			padding: 0 70px;
+		}
+		.Footer-blocks.Footer-blocks--middle {
+			flex: 1 1 90%;
+		} //Footer-blocks--middle
+		.sqs-row {
+			@media screen and (max-width: $screen-desktop-lg) {
+				display: flex;
+				flex-wrap: wrap;
+				.col {
+					flex-basis: 100%;
+				}
+			}
+			>.col {
+				&:nth-child(2) {
+					/* Social Column */
+					@media screen and (max-width: $screen-desktop-lg) {
+						order: 1;
+					}
+					p {
+						margin-bottom: $lh/3;
+						margin-left: 17px;
+						font-family: $ff-fjalla;
+					}
+					h1 {
+						margin: 0;
+						line-height: 32px;
+						margin-left: $lh;
+						font-size: 24px;
+						font-family: $ff-libre-f;
+						font-weight: 300;
+						color: white;
+					}
+					.button-block {
+						padding-top: 0;
+						padding-bottom: 0;
+						margin-bottom: 40px;
+						margin-left: $lh;
+						a {
+							padding-top: 0;
+							padding-bottom: 0;
+							line-height: 50px;
+						}
+					}
+					@media screen and (max-width: $screen-desktop-lg) {
+						.html-block,
+						.button-block {
+							display: none;
+						}
+					}
+					// Social icons
+					.gallery-block {
+						margin-left: $lh;
+						.sqs-gallery {
+							@media screen and (min-width: $screen-desktop-lg) {
+								text-align: left;
+							}
+						}
+						.sqs-gallery-design-grid-slide {
+							min-width: 30px;
+							max-width: $lh*2;
+							.margin-wrapper {
+								margin-right: 8px !important;
+							}
+							.thumb-image {
+								width: 100% !important;
+								height: auto !important;
+							}
+							@media screen and (max-width: 640px) {
+								width: 20% !important;
+							}
+						}
+					}
+				} // Social Column :: END 
+				/* Logo */
+				.image-block-outer-wrapper .intrinsic {
+					max-width: 100px !important;
+					@media screen and (max-width: $screen-tablet) {
+						padding-top: 0!important;
+						padding-bottom: 0!important;
+					}
+					@media screen and (min-width: $screen-desktop-lg) {
+						max-width: 200px !important;
+					}
+					img {
+						filter: grayscale(100%);
+						opacity: 0.5;
+					}
+				}
+				&:last-child {
+					@media screen and (max-width: $screen-desktop-lg) {
+						display: none;
+					}
+					/* Newsletter */
+					>div {
+						margin-left: 20px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	} // .Footer-middle
+}
+
+// Footer Navigation
+.Footer-nav {
+	@media screen and (min-width: $screen-desktop-lg) {
+		position: absolute;
+		z-index: 1;
+	}
+	&-item {
+		line-height: 27px;
+		p {
+			font-size: 14px;
+		}
+	} //.Footer-nav-item
+}
