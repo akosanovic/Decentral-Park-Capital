@@ -2,7 +2,6 @@
   Home Page
 ==============================*/
 @media screen and (min-width: 960px) {
-  /* line 13, scss/custom-style.scss */
   .homepage .Index-page-content {
     padding-top: 160px;
   }
@@ -12,18 +11,15 @@
   Mobile Header
 =============================*/
 @media screen and (max-width: 640px) {
-  /* line 26, scss/custom-style.scss */
   .Mobile-bar-branding {
     position: relative;
     display: inline-block;
     width: 40.5px;
     height: 54px;
   }
-  /* line 31, scss/custom-style.scss */
   .Mobile-bar-branding img {
     display: none;
   }
-  /* line 34, scss/custom-style.scss */
   .Mobile-bar-branding:after {
     content: '';
     position: absolute;
@@ -40,65 +36,53 @@
 /*==============================
   FOOTER
 ==============================*/
-/* line 54, scss/custom-style.scss */
 .Footer-blocks--bottom {
   display: none;
 }
 
-/* line 60, scss/custom-style.scss */
 .Footer-middle h1 {
   color: #fff;
   font-size: 24px;
 }
 
-/* line 68, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row !important;
 }
 @media screen and (min-width: 1280px) {
-  /* line 68, scss/custom-style.scss */
   .Footer .Footer-inner .Footer-middle {
     padding: 0 70px;
   }
 }
-/* line 75, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .Footer-blocks.Footer-blocks--middle {
   flex: 1 1 90%;
 }
 @media screen and (max-width: 1280px) {
-  /* line 78, scss/custom-style.scss */
   .Footer .Footer-inner .Footer-middle .sqs-row {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 82, scss/custom-style.scss */
   .Footer .Footer-inner .Footer-middle .sqs-row .col {
     flex-basis: 100%;
   }
 }
-/* line 86, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col {
   /* Logo */
 }
-/* line 87, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) {
   /* Social Column */
 }
 @media screen and (max-width: 1280px) {
-  /* line 87, scss/custom-style.scss */
   .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) {
     order: 1;
   }
 }
-/* line 92, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) p {
   margin-bottom: 9px;
   margin-left: 17px;
   font-family: "Fjalla One";
 }
-/* line 97, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) h1 {
   margin: 0;
   line-height: 32px;
@@ -108,106 +92,93 @@
   font-weight: 300;
   color: white;
 }
-/* line 106, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .button-block {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 40px;
   margin-left: 27px;
 }
-/* line 111, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .button-block a {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 50px;
 }
 @media screen and (max-width: 1280px) {
-  /* line 118, scss/custom-style.scss */
   .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .html-block,
   .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .button-block {
     display: none;
   }
 }
-/* line 124, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .gallery-block {
   margin-left: 27px;
 }
 @media screen and (min-width: 1280px) {
-  /* line 126, scss/custom-style.scss */
   .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .gallery-block .sqs-gallery {
     text-align: left;
   }
 }
-/* line 131, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .gallery-block .sqs-gallery-design-grid-slide {
   min-width: 30px;
   max-width: 54px;
 }
-/* line 134, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .gallery-block .sqs-gallery-design-grid-slide .margin-wrapper {
   margin-right: 8px !important;
 }
-/* line 137, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .gallery-block .sqs-gallery-design-grid-slide .thumb-image {
   width: 100% !important;
   height: auto !important;
 }
 @media screen and (max-width: 640px) {
-  /* line 131, scss/custom-style.scss */
   .Footer .Footer-inner .Footer-middle .sqs-row > .col:nth-child(2) .gallery-block .sqs-gallery-design-grid-slide {
     width: 20% !important;
   }
 }
-/* line 148, scss/custom-style.scss */
-.Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block-outer-wrapper .intrinsic {
+@media screen and (max-width: 1280px) {
+  .Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block {
+    padding-top: 0 !important;
+    padding-bottom: 5px !important;
+  }
+}
+.Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block .intrinsic {
   max-width: 100px !important;
 }
 @media screen and (max-width: 960px) {
-  /* line 148, scss/custom-style.scss */
-  .Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block-outer-wrapper .intrinsic {
+  .Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block .intrinsic {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 148, scss/custom-style.scss */
-  .Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block-outer-wrapper .intrinsic {
+  .Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block .intrinsic {
     max-width: 200px !important;
   }
 }
-/* line 157, scss/custom-style.scss */
-.Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block-outer-wrapper .intrinsic img {
+.Footer .Footer-inner .Footer-middle .sqs-row > .col .image-block .intrinsic img {
   filter: grayscale(100%);
   opacity: 0.5;
 }
-/* line 162, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:last-child {
   /* Newsletter */
 }
 @media screen and (max-width: 1280px) {
-  /* line 162, scss/custom-style.scss */
   .Footer .Footer-inner .Footer-middle .sqs-row > .col:last-child {
     display: none;
   }
 }
-/* line 167, scss/custom-style.scss */
 .Footer .Footer-inner .Footer-middle .sqs-row > .col:last-child > div {
   margin-left: 20px;
   font-size: 14px;
 }
 
 @media screen and (min-width: 1280px) {
-  /* line 178, scss/custom-style.scss */
   .Footer-nav {
     position: absolute;
     z-index: 1;
   }
 }
-/* line 183, scss/custom-style.scss */
 .Footer-nav-item {
   line-height: 27px;
 }
-/* line 185, scss/custom-style.scss */
 .Footer-nav-item p {
   font-size: 14px;
 }

@@ -145,20 +145,29 @@ $screen-desktop-lg: 1280px;
 					}
 				} // Social Column :: END 
 				/* Logo */
-				.image-block-outer-wrapper .intrinsic {
-					max-width: 100px !important;
-					@media screen and (max-width: $screen-tablet) {
-						padding-top: 0!important;
-						padding-bottom: 0!important;
-					}
-					@media screen and (min-width: $screen-desktop-lg) {
-						max-width: 200px !important;
-					}
-					img {
-						filter: grayscale(100%);
-						opacity: 0.5;
-					}
-				}
+                .image-block {
+                    @media screen and (max-width: $screen-desktop-lg){
+                        padding-top: 0 !important;
+                        padding-bottom: 5px !important;
+                    }
+
+                    .intrinsic {
+                        max-width: 100px !important;
+                        
+                        @media screen and (max-width: $screen-tablet) {
+                            padding-top: 0!important;
+                            padding-bottom: 0!important;
+                        }
+                        
+                        @media screen and (min-width: $screen-desktop-lg) {
+                            max-width: 200px !important;
+                        }
+                        img {
+                            filter: grayscale(100%);
+                            opacity: 0.5;
+                        }
+                    }
+                }
 				&:last-child {
 					@media screen and (max-width: $screen-desktop-lg) {
 						display: none;
