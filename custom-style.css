@@ -11,7 +11,13 @@
 }
 @media screen and (min-width: 960px) {
   .homepage .Index-page-content {
-    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

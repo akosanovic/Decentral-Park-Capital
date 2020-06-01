@@ -12,16 +12,21 @@ $screen-desktop-lg: 1280px;
 .homepage {
     .Mobile-bar {
         @media screen and (max-width: $screen-mobile){
-            background-color: #1f1f1f; 
+            background-color: #1f1f1f;
             .Mobile-bar-menu {
-                stroke: #ffffff; 
+                stroke: #ffffff;
             }
         }
     }
-	.Index-page-content {
-		@media screen and (min-width: $screen-tablet) {
-			padding-top: 160px;
-		}
+	.Index-page-content { 
+		@media screen and (min-width: $screen-tablet) { 
+			display: flex; // Center content on the home page
+			flex-direction: column;
+			justify-content: center;
+			height: 100vh;
+			margin-top: 0 !important;
+			padding-top: 0;
+			padding-bottom: 0;		}
 	}
 }
 
@@ -161,13 +166,13 @@ $screen-desktop-lg: 1280px;
                     }
 
                     .intrinsic {
-                        max-width: 100px !important;
-                        
+						max-width: 100px !important;
+
                         @media screen and (max-width: $screen-tablet) {
                             padding-top: 0!important;
                             padding-bottom: 0!important;
                         }
-                        
+
                         @media screen and (min-width: $screen-desktop-lg) {
                             max-width: 200px !important;
                         }
