@@ -234,3 +234,26 @@ $screen-desktop-lg: 1280px;
         color: #0fff4f;
     }
 } 
+
+
+/*============================
+* COMMENTS
+=============================*/
+.squarespace-comments {
+    .new-comment-area,
+    .input form.comment-form textarea {
+        background-color: transparent; // override default color
+    }
+
+    // Add Brand Style
+    .new-comment-area .input,
+    .comment-btn-wrapper {
+        border-color: #0fff4f;
+    }
+
+    .comment-btn {
+        background: transparent;
+        border: 1px solid #0fff4f;
+        color: #0fff4f;
+    }
+} 

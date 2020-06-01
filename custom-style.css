@@ -214,3 +214,20 @@
 .archive-block .archive-group-name-link {
   color: #0fff4f;
 }
+
+/*============================
+* COMMENTS
+=============================*/
+.squarespace-comments .new-comment-area,
+.squarespace-comments .input form.comment-form textarea {
+  background-color: transparent;
+}
+.squarespace-comments .new-comment-area .input,
+.squarespace-comments .comment-btn-wrapper {
+  border-color: #0fff4f;
+}
+.squarespace-comments .comment-btn {
+  background: transparent;
+  border: 1px solid #0fff4f;
+  color: #0fff4f;
+}
