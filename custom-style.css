@@ -199,3 +199,18 @@
 .Footer-nav-item p {
   font-size: 14px;
 }
+
+/*============================
+ * BLOG
+=============================*/
+.summary-block-collection-type-blog .summary-read-more-link,
+.summary-block-collection-type-blog .summary-metadata--secondary {
+  color: #0fff4f;
+}
+
+/*============================
+ * Archive
+=============================*/
+.archive-block .archive-group-name-link {
+  color: #0fff4f;
+}

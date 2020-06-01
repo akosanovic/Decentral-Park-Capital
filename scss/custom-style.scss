@@ -213,3 +213,24 @@ $screen-desktop-lg: 1280px;
 		}
 	} //.Footer-nav-item
 }
+
+
+
+/*============================
+ * BLOG
+=============================*/
+.summary-block-collection-type-blog {
+    // Featured
+    .summary-read-more-link,
+    .summary-metadata--secondary { // blog category tag
+        color: #0fff4f;
+    }
+}
+/*============================
+ * Archive
+=============================*/
+.archive-block {
+    .archive-group-name-link {
+        color: #0fff4f;
+    }
+} 
