@@ -28,6 +28,9 @@ $screen-desktop-lg: 1280px;
 			padding-top: 0;
 			padding-bottom: 0;		}
 	}
+	.Footer {
+		display: none;   // Hide footer on Home Page
+	}
 }
 
 
