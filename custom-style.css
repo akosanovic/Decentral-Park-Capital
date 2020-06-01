@@ -201,7 +201,7 @@
 }
 
 /*============================
- * BLOG
+  * BLOG LIST
 =============================*/
 .summary-block-collection-type-blog .summary-read-more-link,
 .summary-block-collection-type-blog .summary-metadata--secondary {
@@ -213,6 +213,13 @@
 =============================*/
 .archive-block .archive-group-name-link {
   color: #0fff4f;
+}
+
+/*============================
+ * BLOG PAGE
+=============================*/
+.Main--blog-item .BlogItem-title {
+  font-size: 32px;
 }
 
 /*============================

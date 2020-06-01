@@ -217,7 +217,7 @@ $screen-desktop-lg: 1280px;
 
 
 /*============================
- * BLOG
+  * BLOG LIST
 =============================*/
 .summary-block-collection-type-blog {
     // Featured
@@ -234,6 +234,15 @@ $screen-desktop-lg: 1280px;
         color: #0fff4f;
     }
 } 
+
+/*============================
+ * BLOG PAGE
+=============================*/
+.Main--blog-item {
+    .BlogItem-title {
+        font-size: 32px;
+    }
+}
 
 
 /*============================
